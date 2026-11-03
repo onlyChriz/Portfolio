@@ -26,7 +26,8 @@
   --radius-lg: 16px;
 
   --page-max: 1200px;
-  --content-max: 960px;
+  --content-max: 1140px;
+  --measure: 72ch; /* comfortable line length for prose */
   --gutter: clamp(1rem, 3vw, 2.5rem);
 
   --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -139,7 +140,7 @@ code {
 hr {
   border: 0;
   border-top: 1px solid color-mix(in srgb, var(--text) 25%, transparent);
-  margin: 3.4rem 0;
+  margin: 2.5rem 0;
 }
 
 .visually-hidden {
@@ -180,25 +181,32 @@ hr {
 }
 
 .section {
-  margin-block: 2.5rem;
+  margin-block: 2rem;
 }
 
 /* A dark block of content – replaces the WP "cover" blocks */
 .panel {
   background: var(--surface);
-  padding: clamp(1.25rem, 4vw, 2.5rem);
-  margin-block: 2.5rem;
+  padding: clamp(1.25rem, 3.5vw, 2.25rem);
+  margin-block: 1.5rem;
 }
 
 .panel > :last-child {
   margin-bottom: 0;
 }
 
+/* Keep single-column prose readable on wide screens */
+.panel > p,
+.panel > h2:not(.section-title),
+.panel > h3:not(.text-center) {
+  max-width: var(--measure);
+}
+
 .section-title {
   text-align: center;
   font-size: clamp(1.75rem, 4.5vw, 2.25rem);
   font-weight: 400;
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
 }
 
 /* Two equal columns, vertically centred */
@@ -437,7 +445,7 @@ hr {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: clamp(260px, 40vw, 420px);
+  min-height: clamp(200px, 26vw, 340px);
   overflow: hidden;
   isolation: isolate;
   background: var(--surface);
@@ -461,7 +469,7 @@ hr {
 }
 
 .hero__logo {
-  width: min(320px, 70%);
+  width: min(300px, 65%);
   padding: 1rem;
 }
 
@@ -537,6 +545,19 @@ hr {
   color: var(--text-strong);
 }
 
+.button--primary {
+  background: var(--purple-700);
+  border-color: var(--purple-700);
+  color: #fff;
+}
+
+.button--primary:hover,
+.button--primary:focus-visible {
+  background: var(--purple-500);
+  border-color: var(--purple-500);
+  color: #fff;
+}
+
 .notice {
   background: var(--text);
   color: var(--surface);
@@ -550,75 +571,90 @@ hr {
 }
 
 /* ---------- 9. Home ---------- */
-.home-logo {
-  width: min(500px, 100%);
-  margin: 1rem auto 0;
-}
-
-.feature {
-  border: 3px solid var(--text-strong);
-  padding: 1rem;
+.intro {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
   align-items: center;
+  padding-block: clamp(1rem, 3vw, 2.5rem) clamp(1.5rem, 3vw, 2.5rem);
 }
 
-.feature__body p {
+.intro h1 {
+  margin: 0 0 1.25rem;
+}
+
+.intro__logo {
+  width: min(420px, 100%);
+}
+
+.intro__lead {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--text-strong);
+  max-width: 34ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.spotlight {
   background: var(--surface);
-  padding: 1rem 1.25rem;
-  font-size: 1.1rem;
+  border: 1px solid var(--surface-raised);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
-.feature__body .button {
-  float: right;
+.spotlight video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
 }
 
-@media (max-width: 781px) {
-  .feature {
+.spotlight__body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.spotlight__body h2 {
+  font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.spotlight__kicker {
+  color: var(--purple-300);
+  font-size: 0.9rem;
+  margin: 0 0 0.25rem;
+}
+
+@media (max-width: 860px) {
+  .intro {
     grid-template-columns: 1fr;
   }
 }
 
-/* Linked thumbnails that zoom on hover */
-.thumb-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.thumb-row a {
-  display: block;
-  width: min(260px, 85vw);
-  border: 2px solid var(--text);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-}
-
-.thumb-row img {
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  transition: transform 0.45s var(--ease-out);
-}
-
-.thumb-row a:hover img,
-.thumb-row a:focus-visible img {
-  transform: scale(1.08);
-}
-
-/* ---------- 10. Projects index ---------- */
+/* ---------- 10. Project cards (home + projects index) ---------- */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-card a {
@@ -629,25 +665,58 @@ hr {
   border-radius: var(--radius);
   overflow: hidden;
   text-decoration: none;
-  transition: border-color 0.2s, transform 0.2s;
+  transition: border-color 0.2s;
 }
 
 .project-card a:hover,
 .project-card a:focus-visible {
   border-color: var(--purple-500);
-  transform: translateY(-3px);
 }
 
 .project-card img {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  transition: transform 0.45s var(--ease-out);
 }
 
-.project-card h2 {
-  font-size: 1.15rem;
+.project-card a:hover img,
+.project-card a:focus-visible img {
+  transform: scale(1.04);
+}
+
+.project-card__media {
+  display: block;
+  overflow: hidden;
+}
+
+.project-card__body {
+  display: block;
+  padding: 0.85rem 1rem 1rem;
+}
+
+.project-card h2,
+.project-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.2rem;
+}
+
+.project-card p {
   margin: 0;
-  padding: 0.9rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-head h2 {
+  margin: 0;
 }
 
 /* ---------- 11. About ---------- */
@@ -719,8 +788,8 @@ hr {
   position: relative;
   display: grid;
   gap: 4px;
-  width: min(100%, 350px);
-  height: 250px;
+  width: 100%;
+  aspect-ratio: 16 / 10;
   margin-inline: auto;
   background: #111;
   border: 1px solid var(--purple-vivid);
@@ -782,17 +851,11 @@ hr {
 .gallery__open::before {
   content: "";
   position: absolute;
-  inset: -250px 0 0 0;
+  inset: -2000px 0 0 0;
 }
 
 .gallery__open:focus-visible {
   outline-offset: -4px;
-}
-
-@media (max-width: 768px) {
-  .gallery {
-    height: 220px;
-  }
 }
 
 .lightbox {
@@ -893,4 +956,69 @@ hr {
   min-height: 500px;
   border: 0;
   background: #fff;
+}
+
+/* ---------- 16. Placeholders ----------
+   Mark content that still needs filling in with class="todo".
+   Shown with a dashed outline so it is easy to spot; remove the class when done. */
+.todo {
+  outline: 2px dashed var(--purple-300);
+  outline-offset: 4px;
+}
+
+.media-placeholder {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  background: var(--surface-raised);
+  color: var(--purple-300);
+  border-radius: var(--radius);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Hero without a logo image: show the title as text */
+.hero__title {
+  margin: 0;
+  padding: 1rem;
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-weight: 700;
+  color: var(--text-strong);
+  text-shadow: 0 2px 16px rgb(0 0 0 / 0.6);
+}
+
+/* ---------- 17. Page intro (internship / non-game pages) ---------- */
+.page-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  padding-block: clamp(1rem, 3vw, 2rem);
+}
+
+.page-intro__lead {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  color: var(--text-strong);
+  max-width: var(--measure);
+}
+
+.page-intro__aside {
+  background: var(--surface);
+  border: 1px solid var(--surface-raised);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.page-intro__aside .media-placeholder,
+.page-intro__aside img {
+  aspect-ratio: auto;
+  min-height: 90px;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 860px) {
+  .page-intro {
+    grid-template-columns: 1fr;
+  }
 }

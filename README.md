@@ -14,6 +14,7 @@ home/specialization/            Specialization article (+ doxygen/ wrapper page)
 bardo/, specialization/, doxygen/   Redirects from old WordPress URLs
 404.html                        Not-found page (uses <base href="/Portfolio/">, see below)
 assets/css/style.css            All styles (colour tokens at the top)
+assets/js/layout.js             Shared header menu + footer (edit the menu here)
 assets/js/main.js               Mobile menu, gallery lightbox, on-screen video playback, back-to-top
 assets/media/                   Images and videos
 assets/icons/                   Favicon and social icons
@@ -41,6 +42,19 @@ Links are relative to each page, so a page two folders deep links to `../../asse
 
 Don't add `CNAME` before the DNS moves: GitHub would redirect the `github.io` address to the
 domain, which still serves the old WordPress site.
+
+## Header, menu and footer
+
+They are defined once in `assets/js/layout.js` (the `MENU` and `FOOTER_LINKS` lists at the top)
+and drawn on every page. A new page needs this as the first thing in `<body>`, with the path
+adjusted to the page's depth, plus `main.js` in the `<head>`:
+
+```html
+<script src="../../assets/js/layout.js"></script>
+<main id="main" class="container">
+  ...
+</main>
+```
 
 ## Content building blocks
 

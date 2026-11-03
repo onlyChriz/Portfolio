@@ -122,6 +122,7 @@
   if (typeof HTMLDialogElement === "function") {
     galleries.forEach(function (gallery) {
       var count = gallery.querySelectorAll(":scope > img, :scope > video").length;
+      if (count === 0) return; // empty placeholder gallery
       gallery.dataset.count = String(Math.min(count, 4));
 
       var btn = document.createElement("button");
@@ -139,13 +140,15 @@
     });
   }
 
-  /* ---------- Scroll to top ---------- */
-  var toTop = document.querySelector(".to-top");
-  if (toTop) {
+  /* ---------- Scroll to top ----------
+     layout.js adds the button when the page has loaded, so wait for that. */
+  document.addEventListener("DOMContentLoaded", function () {
+    var toTop = document.querySelector(".to-top");
+    if (!toTop) return;
     var onScroll = function () {
       toTop.classList.toggle("is-visible", window.scrollY > 400);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
-  }
+  });
 })();
