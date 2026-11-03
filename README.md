@@ -1,7 +1,10 @@
-# christoffer-nilsson.com
+# Portfolio
 
-Portfolio site, served by GitHub Pages from the repository root (custom domain in `CNAME`).
-Plain static HTML, no build step.
+Portfolio site, served by GitHub Pages from the repository root at
+https://onlychriz.github.io/Portfolio/. Plain static HTML, no build step.
+
+All links are relative, so the site works on `github.io`, on a custom domain, and when a
+file is opened directly from disk.
 
 ```
 index.html                      Home
@@ -9,7 +12,7 @@ about/                          About
 projects/                       Project list + one folder per project
 home/specialization/            Specialization article (+ doxygen/ wrapper page)
 bardo/, specialization/, doxygen/   Redirects from old WordPress URLs
-404.html                        Not-found page (used automatically by GitHub Pages)
+404.html                        Not-found page (uses <base href="/Portfolio/">, see below)
 assets/css/style.css            All styles (colour tokens at the top)
 assets/js/main.js               Mobile menu, gallery lightbox, on-screen video playback, back-to-top
 assets/media/                   Images and videos
@@ -19,12 +22,25 @@ Docs/html/                      Generated Doxygen output (don't edit by hand)
 
 ## Preview locally
 
-Links are root-relative (`/assets/...`), so open the site through a local server rather than as a file:
+Open `index.html` directly, or run a local server (needed for the Doxygen iframe in some browsers):
 
 ```sh
 python -m http.server 8000
 # then visit http://localhost:8000
 ```
+
+Links are relative to each page, so a page two folders deep links to `../../assets/...`.
+
+## Moving to christoffer-nilsson.com later
+
+1. Add a `CNAME` file at the root containing `christoffer-nilsson.com`.
+2. In `404.html`, change `<base href="/Portfolio/">` to `<base href="/">`.
+3. Settings → Pages → Custom domain: `christoffer-nilsson.com`.
+4. Point the domain's DNS at GitHub Pages (see GitHub's custom domain docs), then enable
+   "Enforce HTTPS" once the certificate is issued.
+
+Don't add `CNAME` before the DNS moves: GitHub would redirect the `github.io` address to the
+domain, which still serves the old WordPress site.
 
 ## Content building blocks
 

@@ -6,16 +6,16 @@
   <title>Bardo – Christoffer Nilsson</title>
   <meta name="description" content="Game Project 3 at The Game Assembly: a 2D platformer in TGA's custom C++/DX11 engine. Unity JSON export pipeline, collision optimization and render pipeline work.">
   <link rel="canonical" href="https://christoffer-nilsson.com/projects/bardo/">
-  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <script src="/assets/js/main.js" defer></script>
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <script src="../../assets/js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand" href="/"><span class="brand__initial">C</span>hristoffer <span class="brand__initial">N</span>ilsson</a>
+      <a class="brand" href="../../index.html"><span class="brand__initial">C</span>hristoffer <span class="brand__initial">N</span>ilsson</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="visually-hidden">Menu</span>
         <svg class="icon-open" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"/></svg>
@@ -23,20 +23,20 @@
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/home/specialization/">Specialization</a></li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../home/specialization/index.html">Specialization</a></li>
           <li class="has-submenu">
-            <a href="/projects/">Group Projects</a>
+            <a href="../../projects/index.html">Group Projects</a>
             <ul class="submenu">
-              <li><a href="/projects/duckduckdie/">Duck Duck Die</a></li>
-              <li><a href="/projects/call-of-the-deep/">Call Of The Deep</a></li>
-              <li><a href="/projects/bardo/" aria-current="page">Bardo</a></li>
-              <li><a href="/projects/slashimi/">Slashimi</a></li>
-              <li><a href="/projects/spite-blod-and-gold/">Spite: Blood and Gold</a></li>
-              <li><a href="/projects/aliens-stole-my-shit/">Aliens Stole My Shit</a></li>
+              <li><a href="../../projects/duckduckdie/index.html">Duck Duck Die</a></li>
+              <li><a href="../../projects/call-of-the-deep/index.html">Call Of The Deep</a></li>
+              <li><a href="../../projects/bardo/index.html" aria-current="page">Bardo</a></li>
+              <li><a href="../../projects/slashimi/index.html">Slashimi</a></li>
+              <li><a href="../../projects/spite-blod-and-gold/index.html">Spite: Blood and Gold</a></li>
+              <li><a href="../../projects/aliens-stole-my-shit/index.html">Aliens Stole My Shit</a></li>
             </ul>
           </li>
-          <li><a href="/about/">About</a></li>
+          <li><a href="../../about/index.html">About</a></li>
         </ul>
       </nav>
     </div>
@@ -44,8 +44,8 @@
 
   <main id="main" class="container">
     <div class="hero">
-      <video class="hero__video" src="/assets/media/2026/03/P3_G4_Bardo_Trailer-online-video-cutter.com-1.mp4" data-autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
-      <img width="1020" height="249" class="hero__logo" src="/assets/media/2026/03/output-onlinepngtools-4.png" alt="Bardo">
+      <video class="hero__video" src="../../assets/media/2026/03/P3_G4_Bardo_Trailer-online-video-cutter.com-1.mp4" data-autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
+      <img width="1020" height="249" class="hero__logo" src="../../assets/media/2026/03/output-onlinepngtools-4.png" alt="Bardo">
     </div>
 
     <section class="panel">
@@ -82,13 +82,13 @@
 
       <h3>Collision Optimization</h3>
       <div class="media-text">
-        <img width="715" height="451" src="/assets/media/2026/03/CollisionTiles.png" alt="Level where every tile has a collider" loading="lazy">
+        <img width="715" height="451" src="../../assets/media/2026/03/CollisionTiles.png" alt="Level where every tile has a collider" loading="lazy">
         <div>
           <p>Initially, all tiles were given a box collider when loaded into the engine. It worked, but it was not optimal because our collision system had to check many objects within a certain radius of the player every frame.</p>
         </div>
       </div>
       <div class="media-text">
-        <img width="778" height="487" src="/assets/media/2026/03/CollisionTiles2.png" alt="Same level where only interactable tiles have colliders" loading="lazy">
+        <img width="778" height="487" src="../../assets/media/2026/03/CollisionTiles2.png" alt="Same level where only interactable tiles have colliders" loading="lazy">
         <div>
           <p>I changed it so only interactable objects were given a collider. This improved performance since the system no longer had to check tiles that were unreachable.</p>
         </div>
@@ -99,11 +99,11 @@
       <h3>Render pipeline</h3>
       <div class="columns">
         <div class="gallery">
-          <video src="/assets/media/2026/04/BardoRenderPipelineDepthShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
-          <img width="740" height="846" src="/assets/media/2026/03/LayerShowcase.png" alt="Render layers showcase" loading="lazy">
-          <img width="866" height="1079" src="/assets/media/2026/03/Layershowcase4.png" alt="Render layers showcase" loading="lazy">
-          <img width="1003" height="1067" src="/assets/media/2026/03/LayerShowcase2.png" alt="Render layers showcase" loading="lazy">
-          <img width="827" height="1079" src="/assets/media/2026/03/Layershowcase3.png" alt="Render layers showcase" loading="lazy">
+          <video src="../../assets/media/2026/04/BardoRenderPipelineDepthShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
+          <img width="740" height="846" src="../../assets/media/2026/03/LayerShowcase.png" alt="Render layers showcase" loading="lazy">
+          <img width="866" height="1079" src="../../assets/media/2026/03/Layershowcase4.png" alt="Render layers showcase" loading="lazy">
+          <img width="1003" height="1067" src="../../assets/media/2026/03/LayerShowcase2.png" alt="Render layers showcase" loading="lazy">
+          <img width="827" height="1079" src="../../assets/media/2026/03/Layershowcase3.png" alt="Render layers showcase" loading="lazy">
         </div>
         <div>
           <p>During the project, I also worked with the render pipeline.</p>
@@ -119,9 +119,9 @@
       <h3>In-game effects and gameplay</h3>
       <div class="columns">
         <div class="gallery">
-          <video src="/assets/media/2026/04/bardoIngameUIShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
-          <img width="1919" height="1079" src="/assets/media/2026/03/IngameUI2.png" alt="In-game control popup" loading="lazy">
-          <video src="/assets/media/2026/04/BardoFallingPlatformShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
+          <video src="../../assets/media/2026/04/bardoIngameUIShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
+          <img width="1919" height="1079" src="../../assets/media/2026/03/IngameUI2.png" alt="In-game control popup" loading="lazy">
+          <video src="../../assets/media/2026/04/BardoFallingPlatformShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
         </div>
         <div>
           <p>In the later stages of development, we wanted to show the player control information when they unlocked a new ability, instead of using a menu or UI panel.</p>
