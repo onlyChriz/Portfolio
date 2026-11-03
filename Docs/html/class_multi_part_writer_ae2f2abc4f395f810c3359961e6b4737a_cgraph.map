@@ -1,0 +1,13 @@
+<map id="MultiPartWriter::AddPayload" name="MultiPartWriter::AddPayload">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,191,108"/>
+<area shape="rect" id="Node000002" href="$class_byte_writer.html#a838ed716afb5651b07bada2271ded0a8" title=" " alt="" coords="269,5,404,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,78,238,41,267,35,262,38,239,47,136,83"/>
+<area shape="rect" id="Node000003" href="$struct_registry_entry.html#a6e94a0c5102d690f31e6dec38eb049b0" title=" " alt="" coords="266,56,407,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,82,253,77,248,79,192,87"/>
+<area shape="rect" id="Node000004" href="$class_payload_factory.html#a8149b1ea45c21407de3cb813611b8afd" title=" " alt="" coords="239,107,434,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,102,226,107,220,108,191,107"/>
+<area shape="rect" id="Node000006" href="$class_payload_registry.html#ab1c188b1df5b054bd4d653ebfb03b1ce" title=" " alt="" coords="239,157,434,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="135,106,239,143,267,153,262,153,238,148,134,111"/>
+<area shape="rect" id="Node000005" href="$class_payload_registry.html#a43ae16d5d36a02d0c0479359769c9023" title=" " alt="" coords="482,107,678,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="434,117,469,120,464,120,435,123"/>
+</map>

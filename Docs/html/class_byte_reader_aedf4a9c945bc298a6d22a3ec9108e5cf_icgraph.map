@@ -1,0 +1,37 @@
+<map id="ByteReader::ReadU32" name="ByteReader::ReadU32">
+<area shape="rect" id="Node000001" title=" " alt="" coords="792,231,946,257"/>
+<area shape="rect" id="Node000002" href="$struct_multi_cast_init_payload.html#ae3e15256fa27b4a94f3ab0d8ceb0e8f4" title=" " alt="" coords="581,5,723,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="853,216,836,182,811,141,780,99,743,62,724,50,724,45,746,58,784,95,816,138,841,180,858,217"/>
+<area shape="rect" id="Node000003" href="$struct_player_state_payload.html#aa19b199a1f008a1dfc516239dcff3728" title=" " alt="" coords="584,72,720,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="844,218,800,174,773,150,743,129,721,117,721,112,746,124,776,146,804,170,849,219"/>
+<area shape="rect" id="Node000004" href="$struct_position_and_timestamp.html#a6b6c11e5a6fc686ec9bd8fbae5b2d2b0" title=" " alt="" coords="574,139,730,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="819,225,743,196,714,185,714,179,745,191,824,224"/>
+<area shape="rect" id="Node000006" href="$struct_replication_state.html#a62ef595a8ada983f6aede31e04c96f86" title=" " alt="" coords="560,205,744,232"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="774,234,745,232,744,227,780,233"/>
+<area shape="rect" id="Node000009" href="$struct_transfer_request.html#a76204d9edbeec5d113e3ebdea3d1477b" title=" " alt="" coords="560,256,744,283"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="775,255,746,261,744,256,780,254"/>
+<area shape="rect" id="Node000010" href="$struct_net_serilizer_3_01int32__t_01_4.html#ad0a89cbb194d52f215261c06fb591a65" title=" " alt="" coords="588,307,717,349"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="819,265,745,297,715,309,713,304,743,292,824,263"/>
+<area shape="rect" id="Node000011" href="$struct_net_serilizer_3_01uint32__t_01_4.html#a87cc9be926951fcfede7d54597289a2d" title=" " alt="" coords="584,373,720,416"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="849,268,804,318,776,342,746,364,722,376,720,371,743,359,773,338,800,314,844,271"/>
+<area shape="rect" id="Node000012" href="$class_byte_reader.html#ac45b7051b9a60f5704b7b7556015b813" title=" " alt="" coords="576,440,728,467"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="859,270,842,309,817,351,785,394,746,430,724,442,722,437,743,426,781,390,813,348,837,306,855,273"/>
+<area shape="rect" id="Node000005" href="$class_replication_manager.html#ad22487a251a3022f007f02b74b555a2e" title=" " alt="" coords="283,139,512,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="556,161,513,163,512,157,561,159"/>
+<area shape="rect" id="Node000007" href="$class_server_game_world.html#a224f6905d534f592f6c5c8a9aacfdda1" title=" " alt="" coords="309,205,486,232"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="543,220,487,221,486,216,548,218"/>
+<area shape="rect" id="Node000008" href="$_server_2source_2main_8cpp.html#ae56a2fd83a2abfcc350a37e2c10fc49a" title=" " alt="" coords="101,205,139,232"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="291,221,141,221,139,216,295,217"/>
+<area shape="rect" id="Node000013" href="$struct_move_payload.html#a54e292b8d46229f30fd42998c9f8b0d7" title=" " alt="" coords="314,315,480,341"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="565,432,558,430,541,411,534,391,526,373,510,355,481,341,481,336,514,351,531,370,539,389,546,408,562,426,570,433"/>
+<area shape="rect" id="Node000015" href="$struct_net_serilizer_3_01float_01_4.html#ada4ffc7808f2537334a9918ef4271ccb" title=" " alt="" coords="334,365,460,408"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="581,436,461,406,461,400,586,435"/>
+<area shape="rect" id="Node000016" href="$struct_net_serilizer_3_01_tga_1_1_vector2f_01_4.html#a4468c95d027748628652ada7ef426878" title=" " alt="" coords="332,432,462,475"/>
+<area shape="poly" id="edge15_Node000012_Node000016" title=" " alt="" coords="558,454,463,456,463,451,563,453"/>
+<area shape="rect" id="Node000017" href="$struct_net_serilizer_3_01_tga_1_1_vector3f_01_4.html#a6ed26bafd5887d4508957de713e50bdb" title=" " alt="" coords="332,499,462,541"/>
+<area shape="poly" id="edge16_Node000012_Node000017" title=" " alt="" coords="586,470,464,506,462,500,581,472"/>
+<area shape="rect" id="Node000018" href="$struct_net_serilizer_3_01_tga_1_1_vector4f_01_4.html#a2d4276372e8f89e3fbd2ce8b25c2d590" title=" " alt="" coords="332,565,462,608"/>
+<area shape="poly" id="edge17_Node000012_Node000018" title=" " alt="" coords="626,476,575,518,513,556,464,574,462,569,511,551,572,514,621,478"/>
+<area shape="rect" id="Node000014" href="$class_replication_manager.html#a439513d389d9c1e0bc2cb43ce1f2327f" title=" " alt="" coords="5,307,235,349"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="296,329,236,331,234,325,301,327"/>
+</map>

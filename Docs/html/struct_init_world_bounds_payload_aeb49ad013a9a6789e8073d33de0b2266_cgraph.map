@@ -1,0 +1,7 @@
+<map id="InitWorldBoundsPayload::Serialize" name="InitWorldBoundsPayload::Serialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,169,48"/>
+<area shape="rect" id="Node000002" href="$class_byte_writer.html#a2892965f3b3de564f8ac543aa9ce1ef9" title=" " alt="" coords="217,13,337,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,24,204,26,198,27,169,29"/>
+<area shape="rect" id="Node000003" href="$struct_net_serializer.html#afaa2ba7793b9c98227a9e9541f0355ff" title=" " alt="" coords="385,13,519,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,24,372,27,367,27,338,29"/>
+</map>

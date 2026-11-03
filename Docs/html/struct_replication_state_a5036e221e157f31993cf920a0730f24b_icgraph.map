@@ -1,0 +1,9 @@
+<map id="ReplicationState::Serilize" name="ReplicationState::Serilize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="317,43,485,69"/>
+<area shape="rect" id="Node000002" href="$class_replication_manager.html#aa05fc0f6eec0a0038623188134568691" title=" " alt="" coords="112,5,249,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="299,43,249,38,249,33,305,43"/>
+<area shape="rect" id="Node000003" href="$class_server_game_world.html#a224f6905d534f592f6c5c8a9aacfdda1" title=" " alt="" coords="92,72,269,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="304,69,270,76,269,71,299,69"/>
+<area shape="rect" id="Node000004" href="$_server_2source_2main_8cpp.html#ae56a2fd83a2abfcc350a37e2c10fc49a" title=" " alt="" coords="5,72,44,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="74,87,44,88,44,83,78,84"/>
+</map>

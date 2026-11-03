@@ -1,0 +1,7 @@
+<map id="ServerGameWorld::AutoConnect" name="ServerGameWorld::AutoConnect">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,217,57"/>
+<area shape="rect" id="Node000002" href="$struct_network_message.html#a491590501ddd249235bc7eaef5d3d43f" title=" " alt="" coords="268,5,448,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,30,255,29,250,30,218,36"/>
+<area shape="rect" id="Node000003" href="$class_byte_writer.html#abedbe573c811678440d8a9343de19876" title=" " alt="" coords="265,56,451,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,52,252,58,247,58,217,58"/>
+</map>

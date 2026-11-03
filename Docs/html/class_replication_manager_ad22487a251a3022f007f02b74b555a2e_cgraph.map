@@ -1,0 +1,17 @@
+<map id="ReplicationManager::ServerToClientMovementMessage" name="ReplicationManager::ServerToClientMovementMessage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,99,235,141"/>
+<area shape="rect" id="Node000002" href="$struct_position_and_timestamp.html#a6b6c11e5a6fc686ec9bd8fbae5b2d2b0" title=" " alt="" coords="283,59,439,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,98,270,95,265,96,236,103"/>
+<area shape="rect" id="Node000007" href="$class_incoming_handle_t.html#a8f4a20da9a864346d3319366d288f266" title=" " alt="" coords="283,136,439,163"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="235,131,270,138,264,138,235,137"/>
+<area shape="rect" id="Node000003" href="$class_byte_reader.html#a1086d01f0918d24adb6ed27a2a75496d" title=" " alt="" coords="507,5,636,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,55,506,38,511,36,437,61"/>
+<area shape="rect" id="Node000005" href="$class_byte_reader.html#a2049336b51cb819d28060ad4f8f6beb8" title=" " alt="" coords="495,56,648,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="439,73,482,74,477,74,439,79"/>
+<area shape="rect" id="Node000006" href="$class_byte_reader.html#aedf4a9c945bc298a6d22a3ec9108e5cf" title=" " alt="" coords="495,107,648,133"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="439,92,485,103,480,103,439,97"/>
+<area shape="rect" id="Node000004" href="$struct_net_serializer.html#ac0db3cdc6a0987fb579dab170856166a" title=" " alt="" coords="704,5,840,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="636,16,691,18,686,19,637,21"/>
+<area shape="rect" id="Node000008" href="$class_incoming_handle_t.html#a56681e67e201238a6a2ffc19cbdac9fa" title=" " alt="" coords="487,157,656,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="439,155,474,161,469,160,439,160"/>
+</map>

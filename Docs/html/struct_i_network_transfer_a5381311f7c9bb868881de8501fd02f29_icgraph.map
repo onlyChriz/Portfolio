@@ -1,0 +1,9 @@
+<map id="INetworkTransfer::INetworkTransfer" name="INetworkTransfer::INetworkTransfer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="544,35,727,77"/>
+<area shape="rect" id="Node000002" href="$struct_i_network_transfer.html#a0b2458499b3a28a757dd71cf7d744235" title=" " alt="" coords="290,5,485,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="526,43,485,41,485,36,531,43"/>
+<area shape="rect" id="Node000004" href="$class_network_system.html#a38eca25d2c2d3c496934c73738fc20cf" title=" " alt="" coords="279,72,496,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="531,68,497,75,496,70,526,69"/>
+<area shape="rect" id="Node000003" href="$class_network_system.html#aa5e6de05678e08e2e6c93edabcdca7fe" title=" " alt="" coords="5,13,231,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="271,27,231,29,231,24,277,26"/>
+</map>

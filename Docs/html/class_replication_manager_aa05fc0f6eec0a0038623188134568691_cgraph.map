@@ -1,0 +1,27 @@
+<map id="ReplicationManager::ClientConnection" name="ReplicationManager::ClientConnection">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,142,116"/>
+<area shape="rect" id="Node000002" href="$struct_replication_state.html#aa336d002e006117de8ab7e388b289842" title=" " alt="" coords="196,5,370,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,71,189,41,214,35,209,38,191,47,122,75"/>
+<area shape="rect" id="Node000003" href="$struct_connect_payload.html#aa243acbb3e7c4d384fd71f4dbefceb5b" title=" " alt="" coords="191,56,374,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,84,178,81,173,84,143,89"/>
+<area shape="rect" id="Node000007" href="$class_byte_writer.html#abedbe573c811678440d8a9343de19876" title=" " alt="" coords="190,107,376,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="141,100,177,106,172,108,143,105"/>
+<area shape="rect" id="Node000008" href="$struct_replication_state.html#a5036e221e157f31993cf920a0730f24b" title=" " alt="" coords="199,157,367,184"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="120,114,191,143,214,152,209,153,189,148,120,119"/>
+<area shape="rect" id="Node000004" href="$class_byte_reader.html#a1086d01f0918d24adb6ed27a2a75496d" title=" " alt="" coords="436,5,565,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="343,53,428,35,423,37,344,58"/>
+<area shape="rect" id="Node000006" href="$class_byte_reader.html#a2049336b51cb819d28060ad4f8f6beb8" title=" " alt="" coords="424,56,577,83"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="374,67,411,69,406,70,375,72"/>
+<area shape="rect" id="Node000005" href="$struct_net_serializer.html#ac0db3cdc6a0987fb579dab170856166a" title=" " alt="" coords="625,5,761,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="565,16,613,18,607,19,566,21"/>
+<area shape="rect" id="Node000009" href="$class_byte_writer.html#a2892965f3b3de564f8ac543aa9ce1ef9" title=" " alt="" coords="440,107,561,133"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="343,154,428,137,423,138,344,159"/>
+<area shape="rect" id="Node000011" href="$class_byte_writer.html#a1fc6a44e649208ab58fd153321c63446" title=" " alt="" coords="428,157,573,184"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="367,168,415,170,410,171,368,173"/>
+<area shape="rect" id="Node000012" href="$class_byte_writer.html#a8265bafab6af2a82d2626f3d4bd076a6" title=" " alt="" coords="428,208,573,235"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="344,182,428,204,423,204,343,187"/>
+<area shape="rect" id="Node000013" href="$class_byte_writer.html#ade9c31c7dbe5541e4c446530cd898f1e" title=" " alt="" coords="432,259,569,285"/>
+<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="307,182,361,212,425,244,442,253,437,253,423,249,358,217,306,187"/>
+<area shape="rect" id="Node000010" href="$struct_net_serializer.html#afaa2ba7793b9c98227a9e9541f0355ff" title=" " alt="" coords="626,107,760,133"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="561,117,613,120,608,120,562,123"/>
+</map>

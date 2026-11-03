@@ -1,0 +1,18 @@
+<map id="GameWorld::Init" name="GameWorld::Init">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,148,121,175"/>
+<area shape="rect" id="Node000002" href="$class_debug_base.html#ade6a251c781c534b28cd106b88ff989c" title=" " alt="" coords="182,5,358,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,146,108,95,135,66,167,42,181,37,177,40,170,46,139,70,112,98,75,149"/>
+<area shape="rect" id="Node000003" href="$class_game_world.html#a0dec9b87dd8aa537f8fe8179930a2924" title=" " alt="" coords="169,56,372,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,145,168,115,202,103,198,106,170,120,98,150"/>
+<area shape="rect" id="Node000005" href="$struct_interpolation_buffer.html#adf3e3739fb975286369c4b9aad7461ee" title=" " alt="" coords="446,115,573,157"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="121,155,432,138,430,143,121,161"/>
+<area shape="rect" id="Node000006" href="$class_debug_base.html#a41c227294618e36e5a9fddd7d5dbfd58" title=" " alt="" coords="213,173,328,200"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="120,166,199,176,195,179,121,171"/>
+<area shape="rect" id="Node000007" href="$struct_i_network_transfer.html#a64791724566bce4e91da44a463621dc4" title=" " alt="" coords="181,224,360,267"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="91,173,170,210,187,218,182,219,168,214,90,178"/>
+<area shape="rect" id="Node000008" href="$struct_interpolation_buffer.html#ac060fbd7dff40ce559969491056da394" title=" " alt="" coords="192,291,348,333"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="74,172,113,224,140,252,170,276,181,285,176,284,167,281,136,256,109,227,72,178"/>
+<area shape="rect" id="Node000004" href="$struct_network_message.html#a491590501ddd249235bc7eaef5d3d43f" title=" " alt="" coords="420,64,599,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="372,75,407,76,402,78,373,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="360,97,434,116,429,118,360,102"/>
+</map>

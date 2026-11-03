@@ -1,0 +1,19 @@
+<map id="D:/Uppgifter/SpeciliseringRefactor/Source/Shared/NetSerilizer/NetSerilizeTGA.hpp" name="D:/Uppgifter/SpeciliseringRefactor/Source/Shared/NetSerilizer/NetSerilizeTGA.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="282,5,496,64"/>
+<area shape="rect" id="Node000002" href="$_net_serilize_core_8hpp.html" title=" " alt="" coords="130,112,269,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="330,63,241,108,239,103,325,66"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="293,112,367,139"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="372,63,349,101,345,97,368,66"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="391,112,506,139"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="409,62,434,100,429,98,407,67"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="530,112,677,139"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="459,62,562,106,557,106,458,67"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,187,66,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="172,142,79,182,77,177,170,137"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="90,187,202,213"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="193,138,166,176,163,172,188,140"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="226,187,280,213"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="210,137,237,175,232,174,208,142"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="304,187,391,213"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="226,137,310,179,305,180,225,142"/>
+</map>

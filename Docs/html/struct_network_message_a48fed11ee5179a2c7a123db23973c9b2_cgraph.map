@@ -1,0 +1,5 @@
+<map id="NetworkMessage::PackageSize" name="NetworkMessage::PackageSize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,214,32"/>
+<area shape="rect" id="Node000002" href="$struct_network_message.html#a8151d1cf1341b0214e32602d381c6ab5" title=" " alt="" coords="262,5,461,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,16,249,19,244,19,214,21"/>
+</map>

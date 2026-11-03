@@ -1,0 +1,11 @@
+<map id="NetworkSystem::Send" name="NetworkSystem::Send">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,159,40"/>
+<area shape="rect" id="Node000002" href="$class_network_system.html#a95540ad2e121c0f58ad1f4961d19f91f" title=" " alt="" coords="207,13,415,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,24,194,26,188,27,159,29"/>
+<area shape="rect" id="Node000003" href="$class_network_system.html#af59c21766655e55fd6b04c58c872ce38" title=" " alt="" coords="463,5,672,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="415,24,450,27,445,27,416,29"/>
+<area shape="rect" id="Node000004" href="$struct_network_message.html#a48fed11ee5179a2c7a123db23973c9b2" title=" " alt="" coords="720,13,929,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="673,24,707,27,702,27,673,29"/>
+<area shape="rect" id="Node000005" href="$struct_network_message.html#a8151d1cf1341b0214e32602d381c6ab5" title=" " alt="" coords="977,13,1176,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="929,24,964,27,959,27,929,29"/>
+</map>

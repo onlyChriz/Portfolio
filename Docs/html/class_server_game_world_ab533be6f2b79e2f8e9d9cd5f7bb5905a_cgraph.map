@@ -1,0 +1,17 @@
+<map id="ServerGameWorld::PrepareStateTransfer" name="ServerGameWorld::PrepareStateTransfer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,186,91"/>
+<area shape="rect" id="Node000002" href="$class_byte_writer.html#a838ed716afb5651b07bada2271ded0a8" title=" " alt="" coords="251,31,386,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,57,237,52,233,55,186,62"/>
+<area shape="rect" id="Node000003" href="$struct_transfer_request.html#a1dd7888abc393c039c40c8fc8ab3d4cb" title=" " alt="" coords="234,81,403,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,77,221,83,215,84,186,82"/>
+<area shape="rect" id="Node000004" href="$class_byte_writer.html#a2892965f3b3de564f8ac543aa9ce1ef9" title=" " alt="" coords="463,5,583,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="370,78,402,67,450,42,463,39,468,37,452,46,404,72,372,83"/>
+<area shape="rect" id="Node000006" href="$class_byte_writer.html#a1fc6a44e649208ab58fd153321c63446" title=" " alt="" coords="451,56,595,83"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="403,82,438,80,433,81,404,87"/>
+<area shape="rect" id="Node000007" href="$class_byte_writer.html#a8265bafab6af2a82d2626f3d4bd076a6" title=" " alt="" coords="451,107,595,133"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="404,103,438,109,433,109,404,108"/>
+<area shape="rect" id="Node000008" href="$class_byte_writer.html#ade9c31c7dbe5541e4c446530cd898f1e" title=" " alt="" coords="454,157,592,184"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="355,106,452,143,471,152,466,151,450,148,354,111"/>
+<area shape="rect" id="Node000005" href="$struct_net_serializer.html#afaa2ba7793b9c98227a9e9541f0355ff" title=" " alt="" coords="643,5,778,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="584,16,630,18,625,19,584,21"/>
+</map>

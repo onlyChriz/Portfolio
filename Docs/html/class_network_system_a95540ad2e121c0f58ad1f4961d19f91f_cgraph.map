@@ -1,0 +1,9 @@
+<map id="NetworkSystem::SendToSocket" name="NetworkSystem::SendToSocket">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,214,40"/>
+<area shape="rect" id="Node000002" href="$class_network_system.html#af59c21766655e55fd6b04c58c872ce38" title=" " alt="" coords="262,5,471,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,24,249,27,244,27,214,29"/>
+<area shape="rect" id="Node000003" href="$struct_network_message.html#a48fed11ee5179a2c7a123db23973c9b2" title=" " alt="" coords="519,13,727,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="471,24,506,27,501,27,471,29"/>
+<area shape="rect" id="Node000004" href="$struct_network_message.html#a8151d1cf1341b0214e32602d381c6ab5" title=" " alt="" coords="775,13,975,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="728,24,763,27,757,27,728,29"/>
+</map>

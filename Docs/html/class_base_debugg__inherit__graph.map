@@ -1,0 +1,7 @@
+<map id="BaseDebugg" name="BaseDebugg">
+<area shape="rect" id="Node000001" title=" " alt="" coords="115,5,272,224"/>
+<area shape="rect" id="Node000002" href="$class_game_world.html" title=" " alt="" coords="5,283,174,544"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,235,138,284,133,282,150,240"/>
+<area shape="rect" id="Node000003" href="$class_server_game_world.html" title=" " alt="" coords="198,272,398,555"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,235,251,273,246,272,236,241"/>
+</map>

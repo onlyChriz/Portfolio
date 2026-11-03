@@ -1,0 +1,7 @@
+<map id="NetworkMessage::GetU8Ptr" name="NetworkMessage::GetU8Ptr">
+<area shape="rect" id="Node000001" title=" " alt="" coords="149,31,335,57"/>
+<area shape="rect" id="Node000002" href="$_net_serialize_message_8hpp.html#a7becc74110ff2d4351e8b054df5cc0cb" title=" " alt="" coords="5,5,101,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,30,101,28,101,22,136,29"/>
+<area shape="rect" id="Node000003" href="$_net_serialize_message_8hpp.html#af80e8df287d81e7867d58a6d9d9cf55b" title=" " alt="" coords="9,56,97,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,59,98,66,97,61,136,58"/>
+</map>

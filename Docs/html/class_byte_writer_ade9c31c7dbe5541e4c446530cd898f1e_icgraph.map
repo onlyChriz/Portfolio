@@ -1,0 +1,22 @@
+<map id="ByteWriter::WriteU8" name="ByteWriter::WriteU8">
+<area shape="rect" id="Node000001" title=" " alt="" coords="763,185,900,212"/>
+<area shape="rect" id="Node000002" href="$struct_replication_state.html#a5036e221e157f31993cf920a0730f24b" title=" " alt="" coords="546,72,714,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="800,175,761,147,714,117,679,102,679,97,716,112,764,142,806,176"/>
+<area shape="rect" id="Node000006" href="$struct_transfer_request.html#a1dd7888abc393c039c40c8fc8ab3d4cb" title=" " alt="" coords="545,127,715,153"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="766,181,678,157,679,151,771,180"/>
+<area shape="rect" id="Node000008" href="$struct_net_serilizer_3_01_tga_1_1_color_01_4.html#afb4f745122403b0bce370e685873eb55" title=" " alt="" coords="565,177,695,220"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="745,199,696,201,696,196,750,198"/>
+<area shape="rect" id="Node000009" href="$struct_net_serilizer_3_01uint8__t_01_4.html#a8a79579e70b21e3df28433343478bbd3" title=" " alt="" coords="565,244,695,287"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="777,217,696,246,695,241,772,218"/>
+<area shape="rect" id="Node000010" href="$class_byte_writer.html#a9592f1b56c179caaf9a50075c4619e13" title=" " alt="" coords="553,311,707,337"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="810,222,768,264,716,301,689,313,688,307,713,296,765,260,805,224"/>
+<area shape="rect" id="Node000003" href="$class_replication_manager.html#aa05fc0f6eec0a0038623188134568691" title=" " alt="" coords="339,5,475,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="559,68,476,47,476,42,564,67"/>
+<area shape="rect" id="Node000004" href="$class_server_game_world.html#a224f6905d534f592f6c5c8a9aacfdda1" title=" " alt="" coords="92,101,269,128"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="529,94,270,112,269,106,532,90"/>
+<area shape="rect" id="Node000005" href="$_server_2source_2main_8cpp.html#ae56a2fd83a2abfcc350a37e2c10fc49a" title=" " alt="" coords="5,101,44,128"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="74,117,46,117,43,112,78,113"/>
+<area shape="rect" id="Node000007" href="$class_server_game_world.html#ab533be6f2b79e2f8e9d9cd5f7bb5905a" title=" " alt="" coords="317,123,497,165"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="527,142,499,145,498,140,532,141"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="299,131,270,129,269,124,304,130"/>
+</map>

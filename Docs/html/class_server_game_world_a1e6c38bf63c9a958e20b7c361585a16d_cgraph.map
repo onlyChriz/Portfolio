@@ -1,0 +1,17 @@
+<map id="ServerGameWorld::HandleEntityMovement" name="ServerGameWorld::HandleEntityMovement">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,216,91"/>
+<area shape="rect" id="Node000002" href="$struct_network_message.html#a491590501ddd249235bc7eaef5d3d43f" title=" " alt="" coords="264,5,443,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,45,273,35,269,37,217,50"/>
+<area shape="rect" id="Node000003" href="$class_byte_writer.html#a838ed716afb5651b07bada2271ded0a8" title=" " alt="" coords="286,56,421,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,67,273,68,268,70,217,72"/>
+<area shape="rect" id="Node000004" href="$struct_position_and_timestamp.html#acc8203adbaacfc3ac107f83caa4ce43b" title=" " alt="" coords="275,107,432,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="202,89,263,105,258,106,202,94"/>
+<area shape="rect" id="Node000005" href="$class_byte_writer.html#a2892965f3b3de564f8ac543aa9ce1ef9" title=" " alt="" coords="503,64,623,91"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="431,107,487,95,493,94,432,112"/>
+<area shape="rect" id="Node000007" href="$class_byte_writer.html#a1fc6a44e649208ab58fd153321c63446" title=" " alt="" coords="491,115,635,141"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="432,125,478,128,473,128,432,131"/>
+<area shape="rect" id="Node000008" href="$class_byte_writer.html#a8265bafab6af2a82d2626f3d4bd076a6" title=" " alt="" coords="491,165,635,192"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="432,144,493,161,487,161,432,150"/>
+<area shape="rect" id="Node000006" href="$struct_net_serializer.html#afaa2ba7793b9c98227a9e9541f0355ff" title=" " alt="" coords="683,64,818,91"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="624,75,670,77,665,78,624,80"/>
+</map>

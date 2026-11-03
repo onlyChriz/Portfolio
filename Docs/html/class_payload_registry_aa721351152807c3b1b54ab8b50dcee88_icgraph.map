@@ -1,0 +1,20 @@
+<map id="PayloadRegistry::TryDeserilize" name="PayloadRegistry::TryDeserilize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="635,107,837,133"/>
+<area shape="rect" id="Node000002" href="$class_payload_factory.html#ac2e873030b5a0d6b3730eb20e7b40e75" title=" " alt="" coords="376,5,587,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="696,98,645,73,586,46,550,35,550,30,588,42,648,68,701,99"/>
+<area shape="rect" id="Node000003" href="$class_payload_factory.html#a176c70a9bed9932c049432dc32020ef6" title=" " alt="" coords="376,56,587,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="648,103,552,86,552,81,653,103"/>
+<area shape="rect" id="Node000004" href="$class_multi_part_reader.html#a8584f137ec96f6163790d12d69fc6145" title=" " alt="" coords="390,107,573,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="616,120,574,123,573,117,622,120"/>
+<area shape="rect" id="Node000005" href="$class_game_world.html#a522625bfc48ecaa07490aa1d7b5564bf" title=" " alt="" coords="189,132,328,159"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="650,137,587,148,449,153,329,151,329,146,449,148,587,143,656,136"/>
+<area shape="rect" id="Node000008" href="$class_server_game_world.html#a224f6905d534f592f6c5c8a9aacfdda1" title=" " alt="" coords="393,208,570,235"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="697,140,588,192,534,210,532,205,586,187,692,141"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="372,133,329,140,328,135,378,132"/>
+<area shape="rect" id="Node000006" href="$_client_2source_2main_8cpp.html#ae56a2fd83a2abfcc350a37e2c10fc49a" title=" " alt="" coords="103,132,141,159"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="171,146,142,148,141,143,176,144"/>
+<area shape="rect" id="Node000007" href="$_client_2source_2main_8cpp.html#ad53223b8779f25caeddb70a3b9172967" title=" " alt="" coords="5,132,55,159"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="85,147,56,148,54,143,89,144"/>
+<area shape="rect" id="Node000009" href="$_server_2source_2main_8cpp.html#ae56a2fd83a2abfcc350a37e2c10fc49a" title=" " alt="" coords="240,208,278,235"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="375,221,278,224,278,219,380,221"/>
+</map>

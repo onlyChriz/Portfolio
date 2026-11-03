@@ -1,0 +1,5 @@
+<map id="GameWorld" name="GameWorld">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,272,174,533"/>
+<area shape="rect" id="Node000002" href="$class_debug_base.html" title=" " alt="" coords="11,5,168,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,237,92,273,87,272,89,242"/>
+</map>

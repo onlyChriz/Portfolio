@@ -1,0 +1,13 @@
+<map id="MovePayload::Serilize" name="MovePayload::Serilize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,157,83"/>
+<area shape="rect" id="Node000002" href="$class_byte_writer.html#a2892965f3b3de564f8ac543aa9ce1ef9" title=" " alt="" coords="217,5,337,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,53,210,35,205,38,136,58"/>
+<area shape="rect" id="Node000004" href="$class_byte_writer.html#a253c7a760cebb0b7acf823551381d945" title=" " alt="" coords="206,56,348,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,67,193,69,188,70,157,72"/>
+<area shape="rect" id="Node000006" href="$class_byte_writer.html#a1fc6a44e649208ab58fd153321c63446" title=" " alt="" coords="205,107,349,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="136,81,210,101,205,103,135,86"/>
+<area shape="rect" id="Node000003" href="$struct_net_serializer.html#afaa2ba7793b9c98227a9e9541f0355ff" title=" " alt="" coords="402,5,536,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="337,16,389,18,384,19,338,21"/>
+<area shape="rect" id="Node000005" href="$class_byte_writer.html#a8265bafab6af2a82d2626f3d4bd076a6" title=" " alt="" coords="397,56,541,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="348,67,384,69,379,70,348,72"/>
+</map>

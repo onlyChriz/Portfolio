@@ -1,0 +1,5 @@
+<map id="INetworkTransfer" name="INetworkTransfer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,193,331"/>
+<area shape="rect" id="Node000002" href="$class_network_system.html" title=" " alt="" coords="15,379,184,768"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,343,102,379,97,379,99,348"/>
+</map>

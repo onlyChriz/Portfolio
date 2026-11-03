@@ -1,0 +1,11 @@
+<map id="PositionAndTimestamp::Deserilize" name="PositionAndTimestamp::Deserilize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,162,91"/>
+<area shape="rect" id="Node000002" href="$class_byte_reader.html#a1086d01f0918d24adb6ed27a2a75496d" title=" " alt="" coords="222,5,351,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,47,218,35,213,37,163,52"/>
+<area shape="rect" id="Node000004" href="$class_byte_reader.html#a2049336b51cb819d28060ad4f8f6beb8" title=" " alt="" coords="210,56,363,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,67,196,69,191,70,163,72"/>
+<area shape="rect" id="Node000005" href="$class_byte_reader.html#aedf4a9c945bc298a6d22a3ec9108e5cf" title=" " alt="" coords="210,107,363,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="162,86,218,102,213,103,162,92"/>
+<area shape="rect" id="Node000003" href="$struct_net_serializer.html#ac0db3cdc6a0987fb579dab170856166a" title=" " alt="" coords="411,5,546,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,16,398,18,393,19,352,21"/>
+</map>

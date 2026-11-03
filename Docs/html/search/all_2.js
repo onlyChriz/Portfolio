@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['border_0',['Border',['../struct_transfer_request.html#a887eb953ffc1900758031e435178e0e6',1,'TransferRequest::Border'],['../struct_transfer_decision.html#a052f081b8f3cd839c9e19613632d8051',1,'TransferDecision::Border']]],
+  ['bottom_1',['Bottom',['../_transfer_structs_8hpp.html#aaedc8f323492ec718d35060af1559253a05cdd4fa6b505ee008f4e865acfecccb',1,'TransferStructs.hpp']]],
+  ['boundingboxobject_2',['BoundingBoxObject',['../struct_debug_base_1_1_bounding_box_object.html',1,'DebugBase']]],
+  ['bytereader_3',['ByteReader',['../class_byte_reader.html',1,'ByteReader'],['../class_byte_reader.html#aaf357342d820b03796fdfb78fd96e578',1,'ByteReader::ByteReader(const uint8_t *data, int size)'],['../class_byte_reader.html#a94c8b831f94bdc354b2cbae8fde50f29',1,'ByteReader::ByteReader(NetworkMessage &amp;msg)'],['../class_byte_reader.html#a0556c2fa6df4bd4314882a4075f72f04',1,'ByteReader::ByteReader(const uint8_t *data, int size, std::source_location loc=std::source_location::current())'],['../class_byte_reader.html#ad99ce4a8964a120ef7bae1df16aa9b4d',1,'ByteReader::ByteReader(NetworkMessage &amp;msg, std::source_location loc=std::source_location::current())']]],
+  ['bytewriter_4',['ByteWriter',['../class_byte_writer.html',1,'ByteWriter'],['../class_byte_writer.html#abbe63fe29ef46c4afc186974caed47c7',1,'ByteWriter::ByteWriter(uint8_t *data, int capacity)'],['../class_byte_writer.html#ac6eb3692012336cb1e8876d075a969a7',1,'ByteWriter::ByteWriter(NetworkMessage &amp;msg)'],['../class_byte_writer.html#abbe63fe29ef46c4afc186974caed47c7',1,'ByteWriter::ByteWriter(uint8_t *data, int capacity)'],['../class_byte_writer.html#ac6eb3692012336cb1e8876d075a969a7',1,'ByteWriter::ByteWriter(NetworkMessage &amp;msg)']]]
+];

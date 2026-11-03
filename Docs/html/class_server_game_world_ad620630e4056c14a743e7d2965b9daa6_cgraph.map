@@ -1,0 +1,21 @@
+<map id="ServerGameWorld::Init" name="ServerGameWorld::Init">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,85,159,112"/>
+<area shape="rect" id="Node000002" href="$class_server_game_world.html#a1e6c38bf63c9a958e20b7c361585a16d" title=" " alt="" coords="207,48,417,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,86,194,84,189,86,160,91"/>
+<area shape="rect" id="Node000010" href="$class_debug_base.html#a41c227294618e36e5a9fddd7d5dbfd58" title=" " alt="" coords="254,115,370,141"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="159,106,241,118,236,120,159,111"/>
+<area shape="rect" id="Node000003" href="$struct_network_message.html#a491590501ddd249235bc7eaef5d3d43f" title=" " alt="" coords="465,5,644,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,45,475,35,470,36,418,50"/>
+<area shape="rect" id="Node000004" href="$class_byte_writer.html#a838ed716afb5651b07bada2271ded0a8" title=" " alt="" coords="487,56,622,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="417,67,474,69,469,70,418,72"/>
+<area shape="rect" id="Node000005" href="$struct_position_and_timestamp.html#acc8203adbaacfc3ac107f83caa4ce43b" title=" " alt="" coords="476,107,633,149"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="403,89,464,105,459,106,403,94"/>
+<area shape="rect" id="Node000006" href="$class_byte_writer.html#a2892965f3b3de564f8ac543aa9ce1ef9" title=" " alt="" coords="704,64,825,91"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="633,107,689,95,694,94,634,112"/>
+<area shape="rect" id="Node000008" href="$class_byte_writer.html#a1fc6a44e649208ab58fd153321c63446" title=" " alt="" coords="692,115,837,141"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="633,125,680,128,674,128,633,131"/>
+<area shape="rect" id="Node000009" href="$class_byte_writer.html#a8265bafab6af2a82d2626f3d4bd076a6" title=" " alt="" coords="692,165,837,192"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="633,144,694,161,689,161,633,150"/>
+<area shape="rect" id="Node000007" href="$struct_net_serializer.html#afaa2ba7793b9c98227a9e9541f0355ff" title=" " alt="" coords="885,64,1019,91"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="825,75,872,77,866,78,825,80"/>
+</map>

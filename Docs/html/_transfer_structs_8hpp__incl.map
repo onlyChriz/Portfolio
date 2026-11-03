@@ -1,0 +1,18 @@
+<map id="D:/Uppgifter/SpeciliseringRefactor/Source/Shared/Data/TransferStructs.hpp" name="D:/Uppgifter/SpeciliseringRefactor/Source/Shared/Data/TransferStructs.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="109,5,282,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,203,66,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,59,69,81,51,96,36,113,29,131,26,150,30,187,25,187,21,150,24,129,32,111,47,92,66,76,111,54"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="46,120,177,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,62,134,110,130,106,169,66"/>
+<area shape="rect" id="Node000004" href="$_net_serilize_core_8hpp.html" title=" " alt="" coords="201,112,358,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,62,254,100,249,100,220,67"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="382,120,529,147"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="273,62,410,113,405,115,272,67"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="217,158,81,202,80,197,216,153"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="117,203,229,229"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="255,154,203,195,200,191,249,156"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="253,203,306,229"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="281,153,282,188,277,185,278,157"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="330,203,418,229"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="305,153,350,193,345,192,303,158"/>
+</map>
