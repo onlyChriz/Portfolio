@@ -15,8 +15,8 @@
 
   <main id="main" class="container">
     <div class="hero">
-      <video class="hero__video" src="../../assets/media/2026/05/ASMS_HERO.webm" data-autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
-      <img width="2048" height="2048" class="hero__logo" src="../../assets/media/2026/04/AliensStolemySh_Logo.png" alt="Aliens Stole My Sh!#">
+      <video class="hero__video" src="media/ASMS_HERO.webm" data-autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
+      <img width="2048" height="2048" class="hero__logo" src="media/AliensStolemySh_Logo.png" alt="Aliens Stole My Sh!#">
     </div>
 
     <section class="panel">
@@ -51,8 +51,8 @@
       <p>The particle system needed refactoring because the version we had from Project Spite was very basic and only supported movement in one direction. To have better VFX, we needed support for ribbon particles and a more flexible system overall.</p>
       <div class="columns">
         <div class="gallery">
-          <video src="../../assets/media/2026/04/ParticleShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
-          <video src="../../assets/media/2026/04/ParticleShowcase2.webm" data-autoplay muted loop playsinline preload="metadata"></video>
+          <video src="media/ParticleShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
+          <video src="media/ParticleShowcase2.webm" data-autoplay muted loop playsinline preload="metadata"></video>
         </div>
         <div>
           <p>To solve this, I restructured the particle system to be more modular. Most of the system had to be redesigned. I changed it to use inheritance so that one particle system could contain multiple emitters of different types, like ribbons and regular particles.</p>
@@ -63,9 +63,9 @@
       <h3>Ribbons</h3>
       <div class="columns">
         <div class="gallery">
-          <video src="../../assets/media/2026/04/FirstWorkingRibbonShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
-          <video src="../../assets/media/2026/04/RibbonFullworkingshowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
-          <video src="../../assets/media/2026/04/ribbonShowcaseIngame.webm" data-autoplay muted loop playsinline preload="metadata"></video>
+          <video src="media/FirstWorkingRibbonShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
+          <video src="media/RibbonFullworkingshowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
+          <video src="media/ribbonShowcaseIngame.webm" data-autoplay muted loop playsinline preload="metadata"></video>
         </div>
         <div>
           <p>Implementing ribbon particles was more challenging than regular particles, since there was limited information available on how to build them.</p>
@@ -79,8 +79,8 @@
       <p>I also worked on the Unreal exporter plugin during this project because it didn’t work as I fully intended.</p>
       <div class="columns">
         <div class="gallery">
-          <img width="855" height="544" src="../../assets/media/2026/03/Skarmbild-2026-03-31-091937.png" alt="Shader preset data asset in Unreal" loading="lazy">
-          <img width="490" height="827" src="../../assets/media/2026/04/MaterialShowcase.png" alt="Exported material" loading="lazy">
+          <img width="855" height="544" src="media/Skarmbild-2026-03-31-091937.png" alt="Shader preset data asset in Unreal" loading="lazy">
+          <img width="490" height="827" src="media/MaterialShowcase.png" alt="Exported material" loading="lazy">
         </div>
         <div>
           <p>In the previous version, the shader preset selector had to be used as a component on an actor, which caused problems when there were multiple materials. I found that I could get data from material parameters in C++, so I changed the setup. For the material PSO, it still used the shader preset selector data asset, but now used a scalar parameter as an ID instead.</p>
@@ -96,9 +96,9 @@
       <p>We had a course in visual scripting, so I already had basic nodes when I implemented it in our game engine. Since the system needed to support different data types, I worked with wildcard pins so I wouldn’t need separate nodes for vectors and scalars.</p>
       <div class="columns">
         <div class="gallery">
-          <video src="../../assets/media/2026/04/TimelineEditorShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
-          <img width="1673" height="824" src="../../assets/media/2026/04/scripting.png" alt="Visual scripting graph" loading="lazy">
-          <img width="676" height="695" src="../../assets/media/2026/04/scriptingTimeline.png" alt="Timeline node" loading="lazy">
+          <video src="media/TimelineEditorShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video>
+          <img width="1673" height="824" src="media/scripting.png" alt="Visual scripting graph" loading="lazy">
+          <img width="676" height="695" src="media/scriptingTimeline.png" alt="Timeline node" loading="lazy">
         </div>
         <div>
           <p>One of the main features the level designers requested was a timeline node, so I implemented one using Unreal’s timeline as reference. Since it is a latent node, it caused some issues with threading, like threads still running at shutdown, but I got it working in the end.</p>
@@ -107,7 +107,7 @@
       </div>
       <div class="columns">
         <div class="gallery">
-          <video src="../../assets/media/2026/04/movingPlatformInGame.webm" data-autoplay muted loop playsinline preload="metadata"></video>
+          <video src="media/movingPlatformInGame.webm" data-autoplay muted loop playsinline preload="metadata"></video>
         </div>
         <div>
           <p>To make it easier to control when scripts should run and update, I also implemented a script graph manager. This gave us one place that registers data types in the type manager and one place to control execution. It prevented begin events from running early and made it easier to trigger specific events.</p>

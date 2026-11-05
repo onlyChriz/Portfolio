@@ -16,7 +16,8 @@ bardo/, specialization/, doxygen/   Redirects from old WordPress URLs
 assets/css/style.css            All styles (colour tokens at the top)
 assets/js/layout.js             Shared header menu + footer (edit the menu here)
 assets/js/main.js               Mobile menu, gallery lightbox, on-screen video playback, back-to-top
-assets/media/                   Images and videos
+<page>/media/                   Images and videos used by that page (e.g. projects/bardo/media/)
+assets/media/                   Home-page media only
 assets/icons/                   Favicon and social icons
 Docs/html/                      Generated Doxygen output (don't edit by hand)
 ```
@@ -62,8 +63,8 @@ adjusted to the page's depth, plus `main.js` in the `<head>`:
   clicking opens all of them in a lightbox.
   ```html
   <div class="gallery">
-    <video src="/assets/media/clip.webm" data-autoplay muted loop playsinline preload="metadata"></video>
-    <img src="/assets/media/shot.png" alt="Describe the image" loading="lazy">
+    <video src="media/clip.webm" data-autoplay muted loop playsinline preload="metadata"></video>
+    <img src="media/shot.png" alt="Describe the image" loading="lazy">
   </div>
   ```
 - **`data-autoplay`** on a `<video>` makes it a muted loop that only plays while on screen

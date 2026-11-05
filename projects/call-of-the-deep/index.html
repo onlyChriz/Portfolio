@@ -15,8 +15,8 @@
 
   <main id="main" class="container">
     <div class="hero">
-      <video class="hero__video" src="../../assets/media/2026/03/CallOfTheDeepHeroCompress.webm" data-autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
-      <img width="1024" height="1024" class="hero__logo" src="../../assets/media/2026/03/T_UI_Titlemenu_Logo.png" alt="Call Of The Deep">
+      <video class="hero__video" src="media/CallOfTheDeepHeroCompress.webm" data-autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
+      <img width="1024" height="1024" class="hero__logo" src="media/T_UI_Titlemenu_Logo.png" alt="Call Of The Deep">
     </div>
 
     <section class="panel">
@@ -45,7 +45,7 @@
 
       <h3>Controls</h3>
       <div class="media-text media-text--half">
-        <video src="../../assets/media/2026/03/2024-12-09_15-32-55-online-video-cutter.com_.mp4" controls preload="metadata" aria-label="Tile-based movement and ladders"></video>
+        <video src="media/2024-12-09_15-32-55-online-video-cutter.com_.mp4" controls preload="metadata" aria-label="Tile-based movement and ladders"></video>
         <div>
           <p>The character movement was tile-based, meaning the player moved one tile at a time in the chosen direction.</p>
           <p>Early in development, we decided to include ladders to create height differences in the levels. In the first version, the character simply teleported when moving between heights, but this was later updated once animations were added.</p>
@@ -59,14 +59,14 @@
       <p>Because much of the game took place outdoors, we wanted to include a lot of foliage. Our trees were built using two planes with textures for leaves and wood. This gave us the visual style we wanted, but it also caused major frame rate drops on our target device.</p>
       <p>I spent a lot of time investigating the performance issues. One of the first things I added was frustum culling, which gave us a small frame boost, but not enough to solve it.</p>
       <div class="media-text media-text--half">
-        <img width="1024" height="573" src="../../assets/media/2026/03/Screenshot-2026-03-08-233057-1024x573.png" alt="Tree-heavy level" loading="lazy">
+        <img width="1024" height="573" src="media/Screenshot-2026-03-08-233057-1024x573.png" alt="Tree-heavy level" loading="lazy">
         <div>
           <p>I noticed that the biggest frame drops happened in levels with many trees, like the one in the image. I started removing objects from the scene to find what could cause the frame drops. When I removed decorations and stones, it improved. However, the tree-heavy levels still performed much worse than cave levels when it had all the decorations.</p>
           <p>I then tested trees without alpha and that made the FPS improve, but when I checked with other teams they had transparent textures as well, so why didn’t ours work?</p>
         </div>
       </div>
       <div class="media-text media-text--half">
-        <img width="1024" height="576" src="../../assets/media/2026/03/Screenshot-2026-03-08-233142-1024x576.png" alt="Level after the texture fix" loading="lazy">
+        <img width="1024" height="576" src="media/Screenshot-2026-03-08-233142-1024x576.png" alt="Level after the texture fix" loading="lazy">
         <div>
           <p>After more debugging, I found that many textures were using transparency even when they didn’t need it. After asking a teacher, I learned that even if a texture appears fully opaque, Unity still performs the checks when transparency is enabled, which was enough to tank our performance on our test tablet.</p>
           <p>To fix this, the graphics team created separate texture maps for assets that needed transparency and assets that did not. That reduced the rendering cost and gave us back the performance we needed.</p>
