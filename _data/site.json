@@ -1,0 +1,15 @@
+{
+  "author": "Christoffer Nilsson",
+  "url": "https://christoffer-nilsson.com",
+  "menu": [
+    { "label": "Home", "url": "/" },
+    { "label": "Specialization", "url": "/home/specialization/" },
+    { "label": "Projects", "url": "/projects/", "projects": true },
+    { "label": "About", "url": "/about/" }
+  ],
+  "footerLinks": [
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/christoffer-nilsson-0539591b9/" },
+    { "label": "itch.io", "url": "https://christga.itch.io/" },
+    { "label": "Email", "url": "mailto:ChrisENilsson@outlook.com" }
+  ]
+}

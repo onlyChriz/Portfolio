@@ -1,33 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Game Projects – Christoffer Nilsson</title>
-  <meta name="description" content="Group game projects made at The Game Assembly: Duck Duck Die, Call Of The Deep, Bardo, Slashimi, Spite: Blood and Gold and Aliens Stole My Sh!#.">
-  <link rel="canonical" href="https://christoffer-nilsson.com/projects/">
-  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script src="../assets/js/main.js" defer></script>
-</head>
-<body>
-  <script src="../assets/js/layout.js"></script>
-
-  <main id="main" class="container">
+---
+layout: base.html
+title: "Game Projects"
+description: "Group game projects made at The Game Assembly: Duck Duck Die, Call Of The Deep, Bardo, Slashimi, Spite: Blood and Gold and Aliens Stole My Sh!#."
+---
     <section class="section">
       <h1>Game projects</h1>
       <ul class="project-grid">
-        <li class="project-card"><a href="../projects/duckduckdie/index.html"><span class="project-card__media"><img src="duckduckdie/media/DuckDuckDieTitle-768x431.png" alt="" loading="lazy" width="768" height="432"></span><span class="project-card__body"><h2>Duck Duck Die</h2><p>Endless runner in Unity</p></span></a></li>
-        <li class="project-card"><a href="../projects/bardo/index.html"><span class="project-card__media"><img src="bardo/media/bardoProjectThumbnale-768x429.webp" alt="" loading="lazy" width="768" height="432"></span><span class="project-card__body"><h2>Bardo</h2><p>2D platformer in TGA’s C++ engine</p></span></a></li>
-        <li class="project-card"><a href="../projects/call-of-the-deep/index.html"><span class="project-card__media"><img src="call-of-the-deep/media/CallOfTheDeepTitle-768x432.png" alt="" loading="lazy" width="768" height="432"></span><span class="project-card__body"><h2>Call Of The Deep</h2><p>Mobile puzzle game in Unity</p></span></a></li>
-        <li class="project-card"><a href="../projects/slashimi/index.html"><span class="project-card__media"><img src="slashimi/media/Slashimi-768x432.png" alt="" loading="lazy" width="768" height="432"></span><span class="project-card__body"><h2>Slashimi</h2><p>3D action-adventure in TGA’s C++ engine</p></span></a></li>
-        <li class="project-card"><a href="../projects/spite-blod-and-gold/index.html"><span class="project-card__media"><img src="spite-blod-and-gold/media/SpiteTitle-768x432.png" alt="" loading="lazy" width="768" height="432"></span><span class="project-card__body"><h2>Spite: Blood and Gold</h2><p>Action RPG in our custom C++ engine</p></span></a></li>
-        <li class="project-card"><a href="../projects/aliens-stole-my-shit/index.html"><span class="project-card__media"><img src="aliens-stole-my-shit/media/AliensStoleMyShit-e1774547778742-768x398.png" alt="" loading="lazy" width="768" height="432"></span><span class="project-card__body"><h2>Aliens Stole My Sh!#</h2><p>Third-person adventure in our custom C++ engine</p></span></a></li>
-        <li class="project-card"><a href="../projects/tilberinn/index.html"><span class="project-card__media"><img src="aliens-stole-my-shit/media/AliensStoleMyShit-e1774547778742-768x398.png" alt="" loading="lazy" width="768" height="432"></span><span class="project-card__body"><h2>Tilberinn</h2><p>First person zombie shooter in our custom C++ engine</p></span></a></li>
-        <li class="project-card"><a href="../projects/internship/index.html"><span class="project-card__media"><img src="aliens-stole-my-shit/media/AliensStoleMyShit-e1774547778742-768x398.png" alt="" loading="lazy" width="768" height="432"></span><span class="project-card__body"><h2>Internship</h2><p>My time as a tool intern at Invisible Walls</p></span></a></li>
+        {%- for p in collections.projects %}
+        {%- render "project-card.html", p: p, heading: "h2" %}
+        {%- endfor %}
       </ul>
     </section>
-  </main>
-
-</body>
-</html>

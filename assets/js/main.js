@@ -140,15 +140,13 @@
     });
   }
 
-  /* ---------- Scroll to top ----------
-     layout.js adds the button when the page has loaded, so wait for that. */
-  document.addEventListener("DOMContentLoaded", function () {
-    var toTop = document.querySelector(".to-top");
-    if (!toTop) return;
+  /* ---------- Scroll to top ---------- */
+  var toTop = document.querySelector(".to-top");
+  if (toTop) {
     var onScroll = function () {
       toTop.classList.toggle("is-visible", window.scrollY > 400);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
-  });
+  }
 })();

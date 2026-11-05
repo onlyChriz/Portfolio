@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if fullTitle %}{{ fullTitle | escape }}{% else %}{{ title | escape }} – {{ site.author }}{% endif %}</title>
+  <meta name="description" content="{{ description | escape }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+  {%- render "header.html", site: site, page: page, projects: collections.projects %}
+
+  <main id="main" class="container">
+{{ content }}
+  </main>
+
+  {%- render "footer.html", site: site %}
+</body>
+</html>

@@ -1,0 +1,9 @@
+  <footer class="site-footer"><div class="site-footer__inner">
+    <p>© {{ site.author }}</p>
+    <ul>
+      {%- for l in site.footerLinks %}
+      <li><a href="{{ l.url }}">{{ l.label }}</a></li>
+      {%- endfor %}
+    </ul>
+  </div></footer>
+  <a class="to-top" href="#main" aria-label="Back to top">↑</a>

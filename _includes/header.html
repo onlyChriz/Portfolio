@@ -1,0 +1,28 @@
+{%- comment -%} Site header. Edit the menu in _data/site.json; the Projects
+dropdown lists every page that has `project:` in its front matter. {%- endcomment %}
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner">
+    {%- if page.url == "/" %}
+    <span></span>
+    {%- else %}
+    <a class="brand" href="/"><span class="brand__initial">C</span>hristoffer <span class="brand__initial">N</span>ilsson</a>
+    {%- endif %}
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="visually-hidden">Menu</span>
+      <svg class="icon-open" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4 17.6 5 12 10.6z"/></svg>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary"><ul>
+      {%- for item in site.menu %}
+      {%- if item.projects %}
+      <li class="has-submenu"><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a><ul class="submenu">
+        {%- for p in projects %}
+        <li><a href="{{ p.url }}"{% if page.url == p.url %} aria-current="page"{% endif %}>{{ p.data.project.menuLabel | default: p.data.project.name }}</a></li>
+        {%- endfor %}
+      </ul></li>
+      {%- else %}
+      <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+      {%- endif %}
+      {%- endfor %}
+    </ul></nav>
+  </div></header>

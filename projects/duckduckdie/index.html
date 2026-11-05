@@ -1,19 +1,14 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Duck Duck Die – Christoffer Nilsson</title>
-  <meta name="description" content="Game Project 1 at The Game Assembly: an endless runner made in Unity. Player controls, UI particle effects, collisions and bug fixing.">
-  <link rel="canonical" href="https://christoffer-nilsson.com/projects/duckduckdie/">
-  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../assets/css/style.css">
-  <script src="../../assets/js/main.js" defer></script>
-</head>
-<body>
-  <script src="../../assets/js/layout.js"></script>
-
-  <main id="main" class="container">
+---
+layout: base.html
+title: "Duck Duck Die"
+description: "Game Project 1 at The Game Assembly: an endless runner made in Unity. Player controls, UI particle effects, collisions and bug fixing."
+project:
+  number: 1
+  name: "Duck Duck Die"
+  summary: "Endless runner in Unity"
+  thumb: "media/DuckDuckDieTitle-768x431.png"
+  featured: true  # show on the home page
+---
     <div class="hero">
       <video class="hero__video" src="media/DuckDuckDieHero.webm" poster="media/DuckDuckDieTitleCropNoText-e1772746027112.png" data-autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
       <img width="705" height="707" class="hero__logo" src="media/DuckDuckDieTitleCropTitle.png" alt="Duck Duck Die">
@@ -71,7 +66,3 @@
       <h3>Conclusion: Working in a team</h3>
       <p>Throughout the project we worked together on many different systems. Sometimes I would implement the base version of a system, and later someone else would take over or improve it. Other times I continued on systems that someone else had started.</p>
     </section>
-  </main>
-
-</body>
-</html>

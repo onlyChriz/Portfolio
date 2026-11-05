@@ -1,10 +1,12 @@
 # Portfolio
 
-Portfolio site, served by GitHub Pages from the repository root at
-https://onlychriz.github.io/Portfolio/. Plain static HTML, no build step.
+Portfolio site built with [Eleventy](https://www.11ty.dev/) and published to GitHub Pages at
+https://onlychriz.github.io/Portfolio/.
 
-All links are relative, so the site works on `github.io`, on a custom domain, and when a
-file is opened directly from disk.
+Pages are plain HTML with a short front-matter block at the top. Eleventy adds the shared
+`<head>`, header, menu and footer, and builds the project cards and the Projects menu from the
+project pages' front matter. Pushing to `main` builds and deploys the site
+(`.github/workflows/deploy.yml`).
 
 ```
 index.html                      Home
@@ -12,50 +14,83 @@ about/                          About
 projects/                       Project list + one folder per project
 home/specialization/            Specialization article (+ doxygen/ wrapper page)
 bardo/, specialization/, doxygen/   Redirects from old WordPress URLs
-404.html                        Not-found page (uses <base href="/Portfolio/">, see below)
+404.html                        Not-found page
+<page>/media/                   Images and videos used by that page (e.g. projects/bardo/media/,
+                                media/ for the home page)
+_includes/base.html             Page skeleton: <head>, header, <main>, footer
+_includes/header.html           Header + menu markup
+_includes/project-card.html     One project card
+_data/site.json                 Menu, footer links, site URL
+eleventy.config.js              Build settings and the project collections
 assets/css/style.css            All styles (colour tokens at the top)
-assets/js/layout.js             Shared header menu + footer (edit the menu here)
 assets/js/main.js               Mobile menu, gallery lightbox, on-screen video playback, back-to-top
-<page>/media/                   Images and videos used by that page (e.g. projects/bardo/media/)
-assets/media/                   Home-page media only
 assets/icons/                   Favicon and social icons
-Docs/html/                      Generated Doxygen output (don't edit by hand)
+Docs/html/                      Generated Doxygen output (copied as-is, don't edit by hand)
 ```
 
-## Preview locally
+## Working on it locally
 
-Open `index.html` directly, or run a local server (needed for the Doxygen iframe in some browsers):
+Requires [Node.js](https://nodejs.org/) (the LTS version).
 
 ```sh
-python -m http.server 8000
-# then visit http://localhost:8000
+npm install     # once
+npm start       # builds and serves at http://localhost:8080, reloads when you save
 ```
 
-Links are relative to each page, so a page two folders deep links to `../../assets/...`.
+`npm run build` writes the finished site to `_site/` (not committed).
 
-## Moving to christoffer-nilsson.com later
+## Adding a page
 
-1. Add a `CNAME` file at the root containing `christoffer-nilsson.com`.
-2. In `404.html`, change `<base href="/Portfolio/">` to `<base href="/">`.
-3. Settings → Pages → Custom domain: `christoffer-nilsson.com`.
-4. Point the domain's DNS at GitHub Pages (see GitHub's custom domain docs), then enable
-   "Enforce HTTPS" once the certificate is issued.
+Create `some-folder/index.html`:
 
-Don't add `CNAME` before the DNS moves: GitHub would redirect the `github.io` address to the
-domain, which still serves the old WordPress site.
+```html
+---
+layout: base.html
+title: "Page title"
+description: "One sentence shown in search results."
+---
+    <h1>Hello</h1>
+    <img src="media/picture.png" alt="Describe the image">
+```
+
+Everything below the `---` goes inside `<main>`. Put the page's images and videos in a `media/`
+folder next to it and link them as `media/<file>`.
+
+To link to another page or a shared file, either use a relative path (`../about/`) or start
+from the site root (`/about/`, `/assets/...`). Root links get `/Portfolio` added automatically
+when the site is built for github.io.
+
+## Adding a project
+
+Make a folder in `projects/` with an `index.html` like the existing ones. The `project:` block
+in its front matter puts it in the Projects menu, on the project list and (with
+`featured: true`) on the home page:
+
+```yaml
+project:
+  number: 8                        # sort order (oldest first in the menu)
+  name: "My Game"                  # card title and menu label
+  menuLabel: "Shorter name"        # optional, menu label if different
+  summary: "Genre in some engine"  # card text
+  thumb: "media/thumbnail.png"     # card image, relative to the project folder
+  featured: true                   # show on the home page
+```
 
 ## Header, menu and footer
 
-They are defined once in `assets/js/layout.js` (the `MENU` and `FOOTER_LINKS` lists at the top)
-and drawn on every page. A new page needs this as the first thing in `<body>`, with the path
-adjusted to the page's depth, plus `main.js` in the `<head>`:
+Edit `_data/site.json` for the menu and footer links, or `_includes/header.html` and
+`_includes/footer.html` for the markup. The Projects dropdown fills itself from the project pages.
 
-```html
-<script src="../../assets/js/layout.js"></script>
-<main id="main" class="container">
-  ...
-</main>
-```
+## Moving to christoffer-nilsson.com later
+
+1. Point the domain's DNS at GitHub Pages (see GitHub's custom domain docs).
+2. Settings → Pages → Custom domain: `christoffer-nilsson.com`, then enable "Enforce HTTPS"
+   once the certificate is issued. No `CNAME` file is needed when deploying with Actions.
+3. Re-run the "Deploy site" workflow (Actions tab → Run workflow) so links lose the
+   `/Portfolio` prefix.
+
+Don't set the custom domain before the DNS moves: GitHub would redirect the `github.io`
+address to the domain, which still serves the old WordPress site.
 
 ## Content building blocks
 
