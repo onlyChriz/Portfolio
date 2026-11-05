@@ -1,13 +1,12 @@
 ---
 layout: base.html
 title: "Tilberinn"
-# TODO: one sentence about the game and your role (shown in search results)
-description: "Game Project 7 at The Game Assembly: Tilberinn."
+description: "Game Project 7 at The Game Assembly: a first-person zombie shooter in our group's custom C++/DX11 engine. Networking for co-op, RGB mask export and Play From Here."
 project:
   number: 7
   name: "Tilberinn"
   summary: "First person zombie shooter in our custom C++ engine"
-  thumb: "/projects/aliens-stole-my-shit/media/AliensStoleMyShit-e1774547778742-768x398.png"
+  thumb: "media/TILBERLINN_Thumbnail.png"
   featured: false  # show on the home page
 ---
     <!-- Banner: background video + logo.
@@ -37,45 +36,95 @@ project:
       </div>
 
       <h2>Summary</h2>
-      <p class="todo">TODO: What the game is, what the project brief asked for, and what you focused on. Two or three short paragraphs, like the other projects.</p>
+      <p>This was our last group project at The Game Assembly. This time we had very free hands in what to make, so we chose to make a first-person zombie shooter with Call of Duty: Zombies as reference. We also wanted the game to have online co-op.</p>
+      <p>For this project, I spent most of my time on the networking for co-op. Since our engine was never made with networking in mind, I had to build everything from the connection up to syncing gameplay between players. In the end we had to scrap co-op, since not everything worked in time and I was mostly working on it alone.</p>
+      <p>I also worked on our Unreal tools. I added RGB mask export from Unreal to our engine, a Play From Here option to start the game where you clicked in the level, and did more fine-tuning on the export plugin and the shader preset tool for the technical artists.</p>
     </section>
 
     <section class="panel">
-      <h2 class="section-title">Contributions</h2>
+      <h2 class="section-title">Networking</h2>
+      <p>Since our reference game was Call of Duty: Zombies, we wanted to have online co-op. The problem was that our engine was not planned or built for networking, so everything had to be added on top of systems that expected the whole game to run on one machine.</p>
 
-      <!-- Media on the left, text on the right. Use a gallery for several images/videos,
-           or a single <img>/<video> for one. Copy this block for each contribution. -->
-      <h3>Unreal Tools</h3>
-      <div class="columns">
-        <div class="gallery">
-          <!-- <video src="media/clip.webm" data-autoplay muted loop playsinline preload="metadata"></video> -->
-          <!-- <img src="media/screenshot.png" alt="Describe the image" loading="lazy"> -->
-          <div class="media-placeholder">Gallery: images or videos</div>
-        </div>
-        <div>
-          <p class="todo">TODO: The problem, what you built, and how it helped the team or the game.</p>
-        </div>
-      </div>
-
-      <hr>
-
-      <h3>Network for CO-OP</h3>
+      <h3>Connection</h3>
       <div class="media-text media-text--half">
-        <div class="media-placeholder">Image or video</div>
-        <!-- <img src="media/screenshot.png" alt="Describe the image" loading="lazy"> -->
+        <div class="media-placeholder">Image: diagram of host and clients, or a code screenshot</div>
+        <!-- <img src="media/NetworkSystem.png" alt="NetworkSystem code" loading="lazy"> -->
         <div>
-          <p>For our last group project we chose to do CoD: zombies, so we wanted to do 
-          networked CO-OP.</p>
+          <p>For the connection, I used UDP with Asio, since it has good wrappers for the Winsock functions. One player hosts the game and the other players connect to the host’s address.</p>
+          <p>Receiving runs on its own thread and puts the packets in a queue. The game then reads the queue once every frame on the main thread. This made it so the rest of the engine didn’t have to care about threads.</p>
+          <p>When a player joins, the client sends a connect message to the host. The host answers with a network ID for the client and then sends out to all players who is in the game. When the level is loaded, each client tells the host it is ready, and when all players are ready the host sends a final sync of the players and the enemies.</p>
+          <p>Since UDP doesn’t guarantee that a message arrives, the client tries to connect a few times with a timeout before it gives up.</p>
         </div>
       </div>
 
-      <hr>
+      <h3>Messages</h3>
+      <div class="media-text media-text--half">
+        <div class="media-placeholder">Image: code screenshot of registering a message</div>
+        <!-- <img src="media/MessageHandler.png" alt="Registering a network message" loading="lazy"> -->
+        <div>
+          <p>Every packet starts with a message type. In the gameplay code, you register a function for a message type together with the struct it should receive. When a message arrives, the message handler reads the struct from the packet and calls the function.</p>
+          <p>I also made it possible to send a message straight into our event system. For example, when a door is opened, it is sent over the network and the other players get the same <code>OpenDoor</code> event as if it happened in their own game.</p>
+          <p>To read and write the structs, I made a serializer that uses structured bindings to go through the members of a struct. This made it so a new message only needed a new struct, without writing any extra code to send it.</p>
+          <p>This was based on what I learned during my <a href="../../home/specialization/index.html">specialization</a>, where I made a message dispatcher and a payload registry for a similar problem.</p>
+        </div>
+      </div>
 
-      <h3 class="todo">TODO: Third contribution (text only)</h3>
-      <p class="todo">TODO: Not every section needs media. Plain paragraphs work too.</p>
+      <h3>Replication</h3>
+      <div class="media-text media-text--half">
+        <div class="media-placeholder">Image: code screenshot of NetworkedComponent</div>
+        <!-- <img src="media/NetworkedComponent.png" alt="NetworkedComponent base class" loading="lazy"> -->
+        <div>
+          <p>To make it easier to network more parts of the game, I made a base class called <code>NetworkedComponent</code>. A component that inherits from it has to say how its state is packed and how a received state should be applied. When something changes, the component marks itself as dirty.</p>
+          <p>Each networked component also has authority. Only the one with authority sends its state, and the other players apply it. For example, the local player has authority over their own character.</p>
+          <p>I also made a replication manager that keeps track of all networked components by network ID and component type. At the end of every frame, it takes all dirty components with authority and sends them together in one batch. When a batch is received, it finds the right component for each update and applies the state.</p>
+        </div>
+      </div>
 
-      <hr>
+      <h3>Syncing the game</h3>
+      <div class="media-text media-text--half">
+        <div class="media-placeholder">Video: two players in the same game</div>
+        <!-- <video src="media/CoopShowcase.webm" data-autoplay muted loop playsinline preload="metadata"></video> -->
+        <div>
+          <p>With the replication in place, I could start syncing the players’ movement and animations. For the animations, I only sent the values that drive the animation, like movement direction, if the player is sprinting and which weapon they are holding. The animations are then played locally in each player’s game.</p>
+          <p>The enemies were harder, since there are a lot of them and they come from a pool. Instead of sending every enemy’s position every frame, I worked on sending what each enemy is doing and who it is targeting, so each player’s game could simulate the movement from that.</p>
+          <p class="todo">TODO: How far did enemy syncing get? Did it work, partly work, or was it still in progress when co-op was scrapped?</p>
+        </div>
+      </div>
 
-      <h3>Conclusion</h3>
-      <p class="todo">TODO: What you take with you from this project.</p>
+      <h3>Why co-op was scrapped</h3>
+      <p class="todo">TODO: What didn’t work in time? For example: problems with syncing enemies, bugs from systems that assumed one player, or not enough time working alone. And what you would do differently if you started again.</p>
+    </section>
+
+    <section class="panel">
+      <h2 class="section-title">Unreal Tools</h2>
+
+      <h3>RGB masks</h3>
+      <div class="media-text media-text--half">
+        <div class="media-placeholder">Image: the same model with different colours from a mask</div>
+        <!-- <img src="media/RGBMask.png" alt="Model coloured with an RGB mask" loading="lazy"> -->
+        <div>
+          <p>The graphics artists wanted more ways to set the scene without making new textures for every variation of a model.</p>
+          <p>To solve this, I added support for exporting RGB masks from Unreal to our engine. Each channel in the mask marks a part of the model that can get its own colour. This made it possible to use the same model or static object with different colours around the level, and made it easier for the artists to add more decoration.</p>
+        </div>
+      </div>
+
+      <h3>Play From Here</h3>
+      <div class="media-text media-text--half">
+        <div class="media-placeholder">Video: Play From Here in Unreal</div>
+        <!-- <video src="media/PlayFromHere.webm" data-autoplay muted loop playsinline preload="metadata"></video> -->
+        <div>
+          <p>To test something in a level, you had to start the game from the beginning and walk to the place you wanted to test.</p>
+          <p>I added a Play From Here option in Unreal that boots the level in our engine and places the player where you clicked. This made it a lot faster to test specific parts of a level.</p>
+        </div>
+      </div>
+
+      <h3>Export plugin and shader presets</h3>
+      <p>I continued to fine-tune the export plugin and the shader preset tool that I made in earlier projects. This made it so the technical artists didn’t have to write the shader pipeline settings by hand.</p>
+      <p>I also helped another team member with how to get Unreal’s Sequencer working with our engine.</p>
+    </section>
+
+    <section class="panel">
+      <h2 class="section-title">Conclusion</h2>
+      <p>Adding networking to an engine that wasn’t made for it showed me how much networking affects the rest of the code. Things like who owns what, who has authority and what needs to be sent have to be decided early, and systems that were made for one player have to be changed to work with more.</p>
+      <p>Even though co-op didn’t make it into the game, I learned a lot from building it from the connection up to syncing gameplay. The tools work also made the workflow from Unreal to our engine smoother for the artists.</p>
     </section>
