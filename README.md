@@ -76,6 +76,9 @@ project:
   featured: true                   # show on the home page
 ```
 
+To keep a page off the live site while you work on it, add `draft: true` to its front matter
+(top level, not inside `project:`). It still shows with `npm start`; remove the line to publish.
+
 ## Header, menu and footer
 
 Edit `_data/site.json` for the menu and footer links, or `_includes/header.html` and

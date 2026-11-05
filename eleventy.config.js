@@ -78,6 +78,12 @@ export default function (eleventyConfig) {
   // adds "/Portfolio" in front of them. Relative links (media/x.png) are left alone.
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
+  // `draft: true` in a page's front matter: shown with `npm start`, but left out of
+  // the real build (no page, not in the Projects menu, list or home page).
+  eleventyConfig.addPreprocessor("drafts", "*", (data) => {
+    if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") return false;
+  });
+
   // Files copied to the site as-is.
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("Docs");
